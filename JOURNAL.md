@@ -1,5 +1,6 @@
+# FYI, the time in brackets shows how time much i (roughly) spent on that session
+
 ## 06.08.26
-## FYI, the time in brackets shows how time much i (roughly) spent on that session
 ### Initial research (~3h)
 
 So, new project yaay, for this project i wanna make some sort of device i could stick onto walls (walls in question being doors/windows too maybe?) and listen to whatevers going on on the other side <br>
@@ -25,3 +26,37 @@ Also started doing some research on components to use in the project, and got so
 ![alt text](images/image.png)
 
 Thats all for now, ive got some more features in mind that id love to add, but its about midnight here and id probably work on this tmrw!
+
+## 08.08.26
+### More research (~3.5h)
+
+As the title suggests, i did some more research on this stuff. Mainly messed around in falstad though with the circuit but there was a fair share of researching done!!
+<br>
+So, at first i tried copying the circuit above into falstad, and after searching it up, i could replace the mic with an AC source in series with a capacitor with the capacitance of the mic.
+
+![alt text](images/image-5.png)
+![alt text](images/image-6.png)
+
+<br>
+
+For some reason, even after messing around with it for a while, that didnt work at all, so after looking some more stuff up and trying different configurations i just gave up, until i discovered opamps exist!! That seemed to be way easier and i had a circuit working almost directly!
+
+![alt text](images/image-7.png)
+
+<br> 
+that was until i tried using a real opamp, which for some reason fucked everything up and just flatlined..
+
+![alt text](images/image-8.png)
+<br>
+
+the fix for the flatline was me being dumb and having the polarity of the opamp power reversed, and turns out i needed a pulldown resistor for the wave maximum to not go down slowly after that, for some reason i cant be bothered to understand, im just glad this shit finally works
+
+![alt text](images/image-9.png)
+
+Also started doing the schematic in kicad, but that took waayy longer than i thought, since i cant just feed 9v into the average opamp IC, so i had to look into buck converters after first finding an IC thats good enough and understanding what all the specs are
+
+![alt text](images/image-10.png)
+
+didnt help much either that the datasheets for buck converters are ALL in chineese
+
+![alt text](images/image-11.png)
