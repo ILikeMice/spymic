@@ -60,3 +60,33 @@ Also started doing the schematic in kicad, but that took waayy longer than i tho
 didnt help much either that the datasheets for buck converters are ALL in chineese
 
 ![alt text](images/image-11.png)
+
+## 09.08.26
+### Component search (~2h)
+
+So, now ive got the main amp thingy ready, but the only problem is that i cant just feed 9V into it, due to the opamps maximum ratings. I looked for a while on lcsc for some bigger opamps, but couldnt find one thatd fit me.. the 2nd option would be to have a stepdown with/without a LDO, i already started looking for buck converters yesterday, but the only one i found had a max power of just 1W, and i wasnt really sure if thatd be enough for me, besides, its output was 5v afaik, and to convert those to a clean 5V with an LDO i need a value higher than 5v, for example 6 or 6.5v
+
+<br>
+
+Only problem with other stepdowns is that they have only one, positive output, which also kinda fucks with the whole opamp circuit. I tried replacing the ground with a certain voltage so the wave would be somewhat offset, but i could only achieve that with an exact voltage of 3v, above which the wave would cut off on the top.
+
+![alt text](images/image-12.png)
+![alt text](images/image-14.png)
+
+since this approach sucks, i just looked into how i can invert a signal or something, but didnt really find a nice enough solution... while writing this journal though i stumbled upon the perfect buck converter, even though this one drops the voltage to 5v, but idgaf at this point and one single 1$ IC can give me both the negative and positive output i needed
+
+
+### Power stuffs (~2h)
+
+![alt text](images/image-16.png)
+So, forget whatever i said about the buck converter last journal, that IC could indeed not give both positive and negative outputs, sadly :/ after digging some more, i just decided to get an inverter for the negative signal. Didnt really wanna do this, but im hoping ill get a decently clean signal from both LDOs. Other than that, i think i should be almost fully done with the pcb part of this! just gotta add a potentiometer and headphone port, or add different output methods if i feel like it!!
+
+## 15.08.26
+### More power stuffs and hopefully finishing the PCB now (~1h)
+Back again, been procrastinating this for a whiiiile because of some other stuff i had to finish before this.
+
+![alt text](images/image-17.png)
+
+all my components from my cart got voided when i made a new cart on lcsc, so i had to go find all of them again... while i was at it though i coincidentially checked the datasheets just one more time and noticed i fucked up the wiring on some of the components and i was missing some capacitors here and there. After fixing that and going through all components one more time, i added the variable resistor to my schematic! Pretty sure this should hopefully be all for now, all im missing is the signal part of the output.
+
+## 16.08.26
