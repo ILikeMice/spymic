@@ -1,0 +1,109 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.0.6*%
+%TF.CreationDate,2026-08-21T23:19:19+03:00*%
+%TF.ProjectId,spymic,7370796d-6963-42e6-9b69-6361645f7063,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Soldermask,Bot*%
+%TF.FilePolarity,Negative*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.0.6) date 2026-08-21 23:19:19*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+G04 Aperture macros list*
+%AMRoundRect*
+0 Rectangle with rounded corners*
+0 $1 Rounding radius*
+0 $2 $3 $4 $5 $6 $7 $8 $9 X,Y pos of 4 corners*
+0 Add a 4 corners polygon primitive as box body*
+4,1,4,$2,$3,$4,$5,$6,$7,$8,$9,$2,$3,0*
+0 Add four circle primitives for the rounded corners*
+1,1,$1+$1,$2,$3*
+1,1,$1+$1,$4,$5*
+1,1,$1+$1,$6,$7*
+1,1,$1+$1,$8,$9*
+0 Add four rect primitives between the rounded corners*
+20,1,$1+$1,$2,$3,$4,$5,0*
+20,1,$1+$1,$4,$5,$6,$7,0*
+20,1,$1+$1,$6,$7,$8,$9,0*
+20,1,$1+$1,$8,$9,$2,$3,0*%
+%AMHorizOval*
+0 Thick line with rounded ends*
+0 $1 width*
+0 $2 $3 position (X,Y) of the first rounded end (center of the circle)*
+0 $4 $5 position (X,Y) of the second rounded end (center of the circle)*
+0 Add line between two ends*
+20,1,$1,$2,$3,$4,$5,0*
+0 Add two circle primitives to create the rounded ends*
+1,1,$1,$2,$3*
+1,1,$1,$4,$5*%
+%AMRotRect*
+0 Rectangle, with rotation*
+0 The origin of the aperture is its center*
+0 $1 length*
+0 $2 width*
+0 $3 Rotation angle, in degrees counterclockwise*
+0 Add horizontal line*
+21,1,$1,$2,0,0,$3*%
+G04 Aperture macros list end*
+%ADD10C,1.000000*%
+%ADD11C,1.700000*%
+%ADD12HorizOval,3.000000X-0.106066X0.106066X0.106066X-0.106066X0*%
+%ADD13HorizOval,3.000000X0.106066X0.106066X-0.106066X-0.106066X0*%
+%ADD14C,2.000000*%
+%ADD15RoundRect,0.250000X-0.750000X-0.750000X0.750000X-0.750000X0.750000X0.750000X-0.750000X0.750000X0*%
+%ADD16C,2.500000*%
+%ADD17RoundRect,0.250000X0.750000X0.750000X-0.750000X0.750000X-0.750000X-0.750000X0.750000X-0.750000X0*%
+%ADD18RotRect,1.600000X1.600000X225.000000*%
+%ADD19C,1.600000*%
+G04 APERTURE END LIST*
+D10*
+%TO.C,CN1*%
+X124176889Y-100000000D03*
+X117176887Y-100000000D03*
+%TD*%
+D11*
+%TO.C,R7*%
+X133324891Y-86578263D03*
+X135092658Y-84810496D03*
+X136860425Y-83042728D03*
+D12*
+X133678445Y-76325214D03*
+X126607378Y-83396283D03*
+%TD*%
+D13*
+%TO.C,R5*%
+X133560661Y-123510407D03*
+X126489592Y-116439340D03*
+D11*
+X133207106Y-113257360D03*
+X134974874Y-115025127D03*
+X136742641Y-116792894D03*
+%TD*%
+D14*
+%TO.C,MK1*%
+X124250000Y-104500000D03*
+D15*
+X119750000Y-104500000D03*
+D16*
+X124250000Y-92500000D03*
+X119750000Y-92500000D03*
+%TD*%
+D14*
+%TO.C,J1*%
+X174250000Y-106125000D03*
+D17*
+X178750000Y-106125000D03*
+D16*
+X174250000Y-94125000D03*
+X178750000Y-94125000D03*
+%TD*%
+D18*
+%TO.C,U5*%
+X172147003Y-114054901D03*
+D19*
+X170350952Y-115850952D03*
+X168554901Y-117647003D03*
+%TD*%
+M02*
